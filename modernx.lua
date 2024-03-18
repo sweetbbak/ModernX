@@ -838,6 +838,7 @@ function render_elements(master_ass)
 
 							elem_ass:new_event()
 							elem_ass:pos(thumbX * r_w, ty - thumbMarginY - thumbfast.height * r_h)
+							elem_ass:an(7)
 							elem_ass:append(osc_styles.Tooltip)
 							elem_ass:draw_start()
 							elem_ass:rect_cw(
