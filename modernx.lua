@@ -54,7 +54,7 @@ local user_opts = {
 	windowcontrols = "auto", -- whether to show window controls
 	greenandgrumpy = false, -- disable santa hat
 	language = "eng", -- eng=English, chs=Chinese
-	volumecontrol = true, -- whether to show mute button and volumne slider
+	volumecontrol = true, -- whether to show mute button and volume slider
 	keyboardnavigation = false, -- enable directional keyboard navigation
 	chapter_fmt = "Chapter: %s", -- chapter print format for seekbar-hover. "no" to disable
 }
@@ -567,7 +567,7 @@ end
 local elements = {}
 
 function prepare_elements()
-	-- remove elements without layout or invisble
+	-- remove elements without layout or invisible
 	local elements2 = {}
 	for n, element in pairs(elements) do
 		if not (element.layout == nil) and element.visible then
@@ -2040,7 +2040,7 @@ function render()
 
 	-- init management
 	if state.active_element then
-		-- mouse is held down on some element - keep ticking and igore initReq
+		-- mouse is held down on some element - keep ticking and ignore initReq
 		-- till it's released, or else the mouse-up (click) will misbehave or
 		-- get ignored. that's because osc_init() recreates the osc elements,
 		-- but mouse handling depends on the elements staying unmodified
@@ -2600,7 +2600,7 @@ function visibility_mode(mode, no_osd)
 	end
 
 	-- Reset the input state on a mode change. The input state will be
-	-- recalcuated on the next render cycle, except in 'never' mode where it
+	-- recalculated on the next render cycle, except in 'never' mode where it
 	-- will just stay disabled.
 	mp.disable_key_bindings("input")
 	mp.disable_key_bindings("window-controls")
